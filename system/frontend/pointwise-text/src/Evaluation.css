@@ -1,0 +1,17 @@
+.Main-Content {
+    width: 50%;
+    margin: 140px 10px 0;
+}
+.Feedback-Controller {
+    width: 80%;
+    display: flex;
+    margin: 20px auto 30px;
+}
+.Feedback-Rater {
+    width: 80%;
+    margin: 0 50px 0;
+    text-align: left;
+}
+.Feedback-Disable {
+    width: 30%;
+}

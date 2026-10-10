@@ -1,0 +1,18 @@
+
+.Evaluation {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 80%;
+    margin: 70px 10px 20px;
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.Submit-Controller {
+    align-items: center;
+    justify-content: center;
+    text-transform: none !important;
+}

@@ -1,0 +1,46 @@
+
+.Evaluation {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 100%;
+    margin: 70px 10px 20px;
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Submit-Controller {
+    align-items: center;
+    justify-content: center;
+    text-transform: none !important;
+}
+.RankingBox {
+    text-align: left;
+}
+.EvaluateOption {
+    display: flex;
+    margin-bottom: 0px;
+}
+.Comment {
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.ButtonGroup {
+    width: 30%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.SubmitButton {
+    margin: auto;
+}
+.Feedback-Rater {
+    margin: 30px 10px 10px 30px;
+    width: 500px;
+}
