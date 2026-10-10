@@ -5,9 +5,11 @@
 **Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization** <br/>
 **[Changkun Ou](https://changkun.de)**, **[Sven Mayer](https://sven-mayer.com)**, **[Daniel Buschek](https://daniel-buschek.de)**, and **[Andreas Butz](http://butz.org)** <br/>
 
+**Try the six interfaces in your browser: [changkun.de/research/rankui](https://changkun.de/research/rankui/)**
+
 This repository includes the paper, the collected dataset (anonymized), the
-scripts that reproduce the reported results, and the source code of the system
-used in the studies.
+scripts that reproduce the reported results, the source code of the system
+used in the studies, and an interactive demo.
 
 ## Full Paper
 
@@ -96,6 +98,14 @@ The study system consists of twelve frontend applications (six interfaces for
 each of the two domains), a backend server written in Go, a Bayesian optimizer
 service, and a text summarization service. For more information, see
 [system/README.md](./system/README.md).
+
+## Demo
+
+The [interactive demo](https://changkun.de/research/rankui/) lets you use the
+six interfaces on the photo color enhancement task and watch the optimizer
+adapt to your feedback. It runs entirely in the browser and records nothing.
+To do so, it ports the photo enhancer and reimplements the optimizers of the
+study system; see [demo/README.md](./demo/README.md).
 
 ## Contribute
 
