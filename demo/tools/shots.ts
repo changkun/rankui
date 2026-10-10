@@ -4,6 +4,11 @@
 //
 //   node build.ts && node tools/shots.ts
 //
+// With a URL as argument, it drives that page instead of the local build,
+// which checks a deployment:
+//
+//   node tools/shots.ts https://changkun.de/research/rankui/
+//
 // Needs a Chromium that playwright-core can launch: set CHROME, or install
 // one with `npx playwright install chromium`.
 
@@ -54,7 +59,7 @@ const server = createServer((req, res) => {
   res.end(readFileSync(file));
 });
 await new Promise<void>((resolve) => server.listen(0, resolve));
-const base = `http://localhost:${(server.address() as AddressInfo).port}${prefix}`;
+const base = process.argv[2] ?? `http://localhost:${(server.address() as AddressInfo).port}${prefix}`;
 
 const browser = await chromium.launch({ executablePath: chromePath() });
 const errors: string[] = [];
@@ -136,4 +141,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log(`ok: all six interfaces ran on desktop and phone; screenshots in ${out}`);
+console.log(`ok: all six interfaces ran on desktop and phone at ${base}; screenshots in ${out}`);
