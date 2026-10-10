@@ -1,0 +1,1240 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{76}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Armstrong(1987)]%
+        {armstrong1987mid}
+\bibfield{author}{\bibinfo{person}{Robert~L. Armstrong}.}
+  \bibinfo{year}{1987}\natexlab{}.
+\newblock \showarticletitle{The Midpoint on a Five-Point Likert-Type Scale}.
+\newblock \bibinfo{journal}{\emph{Perceptual and Motor Skills}}
+  \bibinfo{volume}{64}, \bibinfo{number}{2} (\bibinfo{date}{Apr}
+  \bibinfo{year}{1987}), \bibinfo{pages}{359–362}.
+\newblock
+\showISSN{0031-5125}
+\urldef\tempurl%
+\url{https://doi.org/10.2466/pms.1987.64.2.359}
+\showDOI{\tempurl}
+
+
+\bibitem[Balandat et~al\mbox{.}(2020)]%
+        {balandat2020botorch}
+\bibfield{author}{\bibinfo{person}{Maximilian Balandat}, \bibinfo{person}{Brian
+  Karrer}, \bibinfo{person}{Daniel Jiang}, \bibinfo{person}{Samuel Daulton},
+  \bibinfo{person}{Ben Letham}, \bibinfo{person}{Andrew~G Wilson}, {and}
+  \bibinfo{person}{Eytan Bakshy}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{BoTorch: A Framework for Efficient Monte-Carlo
+  Bayesian Optimization}. In \bibinfo{booktitle}{\emph{Advances in Neural
+  Information Processing Systems}},
+  \bibfield{editor}{\bibinfo{person}{H.~Larochelle},
+  \bibinfo{person}{M.~Ranzato}, \bibinfo{person}{R.~Hadsell},
+  \bibinfo{person}{M.F. Balcan}, {and} \bibinfo{person}{H.~Lin}} (Eds.),
+  Vol.~\bibinfo{volume}{33}. \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{address}{Virtual}, \bibinfo{pages}{21524--21538}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper/2020/file/f5b1b89d98b7286673128a5fb112cb9a-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bates et~al\mbox{.}(2014)]%
+        {bates2014fitting}
+\bibfield{author}{\bibinfo{person}{Douglas Bates}, \bibinfo{person}{Martin
+  Mächler}, \bibinfo{person}{Ben Bolker}, {and} \bibinfo{person}{Steve
+  Walker}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \bibinfo{title}{Fitting Linear Mixed-Effects Models using lme4}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1406.5823}
+\showDOI{\tempurl}
+
+
+\bibitem[Benavoli et~al\mbox{.}(2021)]%
+        {benavoli2021choice}
+\bibfield{author}{\bibinfo{person}{Alessio Benavoli}, \bibinfo{person}{Dario
+  Azzimonti}, {and} \bibinfo{person}{Dario Piga}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Choice functions based multi-objective Bayesian
+  optimisation}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2110.08217}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bettman et~al\mbox{.}(1998)]%
+        {bettman1998constructive}
+\bibfield{author}{\bibinfo{person}{James~R Bettman},
+  \bibinfo{person}{Mary~Frances Luce}, {and} \bibinfo{person}{John~W Payne}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Constructive consumer choice processes}.
+\newblock \bibinfo{journal}{\emph{Journal of consumer research}}
+  \bibinfo{volume}{25}, \bibinfo{number}{3} (\bibinfo{year}{1998}),
+  \bibinfo{pages}{187--217}.
+\newblock
+
+
+\bibitem[Bhandari et~al\mbox{.}(2020)]%
+        {bhandari2020re}
+\bibfield{author}{\bibinfo{person}{Manik Bhandari},
+  \bibinfo{person}{Pranav~Narayan Gour}, \bibinfo{person}{Atabak Ashfaq},
+  \bibinfo{person}{Pengfei Liu}, {and} \bibinfo{person}{Graham Neubig}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Re-evaluating Evaluation in Text Summarization}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2020 Conference on Empirical
+  Methods in Natural Language Processing (EMNLP)}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Online}, \bibinfo{pages}{9347--9359}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.emnlp-main.751}
+\showDOI{\tempurl}
+
+
+\bibitem[Brochu et~al\mbox{.}(2010)]%
+        {brochu2010animation}
+\bibfield{author}{\bibinfo{person}{Eric Brochu}, \bibinfo{person}{Tyson
+  Brochu}, {and} \bibinfo{person}{Nando de Freitas}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{A Bayesian Interactive Optimization Approach to
+  Procedural Animation Design}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2010 ACM SIGGRAPH/Eurographics Symposium on Computer Animation}} (Madrid,
+  Spain) \emph{(\bibinfo{series}{SCA '10})}. \bibinfo{publisher}{Eurographics
+  Association}, \bibinfo{address}{Goslar, DEU}, \bibinfo{pages}{103–112}.
+\newblock
+
+
+\bibitem[Brochu et~al\mbox{.}(2007a)]%
+        {brochu2007active}
+\bibfield{author}{\bibinfo{person}{Eric Brochu}, \bibinfo{person}{Nando~de
+  Freitas}, {and} \bibinfo{person}{Abhijeet Ghosh}.}
+  \bibinfo{year}{2007}\natexlab{a}.
+\newblock \showarticletitle{Active Preference Learning with Discrete Choice
+  Data}. In \bibinfo{booktitle}{\emph{Proceedings of the 20th International
+  Conference on Neural Information Processing Systems}} (Vancouver, British
+  Columbia, Canada) \emph{(\bibinfo{series}{NIPS'07})}.
+  \bibinfo{publisher}{Curran Associates Inc.}, \bibinfo{address}{Red Hook, NY,
+  USA}, \bibinfo{pages}{409–416}.
+\newblock
+\showISBNx{9781605603520}
+
+
+\bibitem[Brochu et~al\mbox{.}(2007b)]%
+        {brochu2007material-design}
+\bibfield{author}{\bibinfo{person}{Eric Brochu}, \bibinfo{person}{Abhijeet
+  Ghosh}, {and} \bibinfo{person}{Nando de Freitas}.}
+  \bibinfo{year}{2007}\natexlab{b}.
+\newblock \showarticletitle{Preference galleries for material design}. In
+  \bibinfo{booktitle}{\emph{{ACM} {SIGGRAPH} 2007 posters}}
+  \emph{(\bibinfo{series}{{SIGGRAPH} '07})}. \bibinfo{publisher}{ACM Press},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{105--es}.
+\newblock
+\showISBNx{978-1-4503-1828-0}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1280720.1280834}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Cao et~al\mbox{.}(2007)]%
+        {cao2007learning}
+\bibfield{author}{\bibinfo{person}{Zhe Cao}, \bibinfo{person}{Tao Qin},
+  \bibinfo{person}{Tie-Yan Liu}, \bibinfo{person}{Ming-Feng Tsai}, {and}
+  \bibinfo{person}{Hang Li}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Learning to rank: from pairwise approach to
+  listwise approach}. In \bibinfo{booktitle}{\emph{Proceedings of the 24th
+  international conference on Machine learning}} \emph{(\bibinfo{series}{ICML
+  ’07})}. \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{129–136}.
+\newblock
+\showISBNx{978-1-59593-793-3}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1273496.1273513}
+\showDOI{\tempurl}
+
+
+\bibitem[Chan et~al\mbox{.}(2022)]%
+        {chan2022chi}
+\bibfield{author}{\bibinfo{person}{Liwei Chan}, \bibinfo{person}{Yi-Chi Liao},
+  \bibinfo{person}{George~B Mo}, \bibinfo{person}{John~J Dudley},
+  \bibinfo{person}{Chun-Lien Cheng}, \bibinfo{person}{Per~Ola Kristensson},
+  {and} \bibinfo{person}{Antti Oulasvirta}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Investigating Positive and Negative Qualities of
+  Human-in-the-Loop Optimization for Designing Interaction Techniques}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2022 CHI Conference on Human
+  Factors in Computing Systems}} (New Orleans, LA, USA)
+  \emph{(\bibinfo{series}{CHI '22})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA}, Article
+  \bibinfo{articleno}{112}, \bibinfo{numpages}{14}~pages.
+\newblock
+\showISBNx{9781450391573}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3491102.3501850}
+\showDOI{\tempurl}
+
+
+\bibitem[Chong et~al\mbox{.}(2021)]%
+        {chong2021interactive}
+\bibfield{author}{\bibinfo{person}{Toby Chong}, \bibinfo{person}{I-Chao Shen},
+  \bibinfo{person}{Issei Sato}, {and} \bibinfo{person}{Takeo Igarashi}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Interactive Optimization of Generative Image
+  Modelling using Sequential Subspace Search and Content-based Guidance}.
+\newblock \bibinfo{journal}{\emph{Computer Graphics Forum}}
+  \bibinfo{volume}{40}, \bibinfo{number}{1} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{279--292}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1111/cgf.14188}
+\showDOI{\tempurl}
+
+
+\bibitem[Christiano et~al\mbox{.}(2017)]%
+        {christiano2017deep}
+\bibfield{author}{\bibinfo{person}{Paul~F. Christiano}, \bibinfo{person}{Jan
+  Leike}, \bibinfo{person}{Tom~B. Brown}, \bibinfo{person}{Miljan Martic},
+  \bibinfo{person}{Shane Legg}, {and} \bibinfo{person}{Dario Amodei}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Deep Reinforcement Learning from Human
+  Preferences}. In \bibinfo{booktitle}{\emph{Proceedings of the 31st
+  International Conference on Neural Information Processing Systems}} (Long
+  Beach, California, USA) \emph{(\bibinfo{series}{NIPS'17})}.
+  \bibinfo{publisher}{Curran Associates Inc.}, \bibinfo{address}{Red Hook, NY,
+  USA}, \bibinfo{pages}{4302–4310}.
+\newblock
+\showISBNx{9781510860964}
+
+
+\bibitem[Chu and Ghahramani(2005)]%
+        {chu2005preference}
+\bibfield{author}{\bibinfo{person}{Wei Chu} {and} \bibinfo{person}{Zoubin
+  Ghahramani}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Preference Learning with Gaussian Processes}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 22nd International Conference on
+  Machine Learning}} (Bonn, Germany) \emph{(\bibinfo{series}{ICML '05})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{137–144}.
+\newblock
+\showISBNx{1595931805}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1102351.1102369}
+\showDOI{\tempurl}
+
+
+\bibitem[Dang et~al\mbox{.}(2022)]%
+        {dang2022prompt}
+\bibfield{author}{\bibinfo{person}{Hai Dang}, \bibinfo{person}{Lukas Mecke},
+  \bibinfo{person}{Florian Lehmann}, \bibinfo{person}{Sven Goller}, {and}
+  \bibinfo{person}{Daniel Buschek}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{How to Prompt? Opportunities and Challenges of Zero-
+  and Few-Shot Learning for Human-AI Interaction in Creative Applications of
+  Generative Models}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2209.01390}
+\showDOI{\tempurl}
+
+
+\bibitem[Daulton et~al\mbox{.}(2020)]%
+        {daulton2020differentiable}
+\bibfield{author}{\bibinfo{person}{Samuel Daulton}, \bibinfo{person}{Maximilian
+  Balandat}, {and} \bibinfo{person}{Eytan Bakshy}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Differentiable Expected Hypervolume Improvement for
+  Parallel Multi-Objective Bayesian Optimization}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing
+  Systems}}, Vol.~\bibinfo{volume}{33}. \bibinfo{publisher}{Curran Associates,
+  Inc.}, \bibinfo{address}{Virtual Conference}, \bibinfo{pages}{9851–9864}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper/2020/hash/6fec24eac8f18ed793f5eaad3dd7977c-Abstract.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Debreu(1960)]%
+        {debreu1960individual}
+\bibfield{author}{\bibinfo{person}{Gerard Debreu}.}
+  \bibinfo{year}{1960}\natexlab{}.
+\newblock \bibinfo{title}{Individual choice behavior: A theoretical analysis}.
+\newblock
+\newblock
+
+
+\bibitem[Ding et~al\mbox{.}(2018)]%
+        {ding2018human}
+\bibfield{author}{\bibinfo{person}{Ye Ding}, \bibinfo{person}{Myunghee Kim},
+  \bibinfo{person}{Scott Kuindersma}, {and} \bibinfo{person}{Conor~J. Walsh}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Human-in-the-loop optimization of hip assistance
+  with a soft exosuit during walking}.
+\newblock \bibinfo{journal}{\emph{Science Robotics}} \bibinfo{volume}{3},
+  \bibinfo{number}{15} (\bibinfo{year}{2018}), \bibinfo{pages}{eaar5438}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1126/scirobotics.aar5438}
+\showDOI{\tempurl}
+
+
+\bibitem[Dreier(1996)]%
+        {dreier1996rational}
+\bibfield{author}{\bibinfo{person}{James Dreier}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{Rational preference: Decision theory as a theory of
+  practical rationality}.
+\newblock \bibinfo{journal}{\emph{Theory and Decision}} \bibinfo{volume}{40},
+  \bibinfo{number}{3} (\bibinfo{date}{May} \bibinfo{year}{1996}),
+  \bibinfo{pages}{249–276}.
+\newblock
+\showISSN{1573-7187}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/BF00134210}
+\showDOI{\tempurl}
+
+
+\bibitem[Dudley et~al\mbox{.}(2019)]%
+        {dudley2019crowdsourcing}
+\bibfield{author}{\bibinfo{person}{John~J. Dudley}, \bibinfo{person}{Jason~T.
+  Jacques}, {and} \bibinfo{person}{Per~Ola Kristensson}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Crowdsourcing Interface Feature Design with
+  Bayesian Optimization}. In \bibinfo{booktitle}{\emph{Proceedings of the 2019
+  CHI Conference on Human Factors in Computing Systems}} (Glasgow, Scotland Uk)
+  \emph{(\bibinfo{series}{CHI '19})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{1–12}.
+\newblock
+\showISBNx{9781450359702}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3290605.3300482}
+\showDOI{\tempurl}
+
+
+\bibitem[Dudley and Kristensson(2018)]%
+        {dudley2018imlui}
+\bibfield{author}{\bibinfo{person}{John~J. Dudley} {and}
+  \bibinfo{person}{Per~Ola Kristensson}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{A Review of User Interface Design for Interactive
+  Machine Learning}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Interactive Intelligent
+  Systems}} \bibinfo{volume}{8}, \bibinfo{number}{2} (\bibinfo{date}{Jun}
+  \bibinfo{year}{2018}), \bibinfo{pages}{1–37}.
+\newblock
+\showISSN{2160-6455, 2160-6463}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3185517}
+\showDOI{\tempurl}
+
+
+\bibitem[Eagly and Chaiken(1993)]%
+        {eagly1993the}
+\bibfield{author}{\bibinfo{person}{Alice~H. Eagly} {and}
+  \bibinfo{person}{Shelly Chaiken}.} \bibinfo{year}{1993}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The psychology of attitudes}}.
+\newblock \bibinfo{publisher}{Harcourt Brace Jovanovich College Publishers},
+  \bibinfo{address}{Orlando, FL, US}. xxii, 794 pages.
+\newblock
+\showISBNx{978-0-15-500097-1}
+
+
+\bibitem[Funke and Reips(2012)]%
+        {funke2012why}
+\bibfield{author}{\bibinfo{person}{Frederik Funke} {and}
+  \bibinfo{person}{Ulf-Dietrich Reips}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Why Semantic Differentials in Web-Based Research
+  Should Be Made from Visual Analogue Scales and Not from 5-Point Scales}.
+\newblock \bibinfo{journal}{\emph{Field Methods}} \bibinfo{volume}{24},
+  \bibinfo{number}{3} (\bibinfo{year}{2012}), \bibinfo{pages}{310--327}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1177/1525822X12444061}
+\showDOI{\tempurl}
+
+
+\bibitem[Gonz\'{a}lez et~al\mbox{.}(2017)]%
+        {gonzalez2017pbo}
+\bibfield{author}{\bibinfo{person}{Javier Gonz\'{a}lez},
+  \bibinfo{person}{Zhenwen Dai}, \bibinfo{person}{Andreas Damianou}, {and}
+  \bibinfo{person}{Neil~D. Lawrence}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Preferential Bayesian Optimization}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 34th International Conference on
+  Machine Learning - Volume 70}} (Sydney, NSW, Australia)
+  \emph{(\bibinfo{series}{ICML'17})}. \bibinfo{publisher}{JMLR.org},
+  \bibinfo{address}{Australia}, \bibinfo{pages}{1282–1291}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.5555/3305381.3305514}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Greis et~al\mbox{.}(2017)]%
+        {greis2017input}
+\bibfield{author}{\bibinfo{person}{Miriam Greis}, \bibinfo{person}{Hendrik
+  Schuff}, \bibinfo{person}{Marius Kleiner}, \bibinfo{person}{Niels Henze},
+  {and} \bibinfo{person}{Albrecht Schmidt}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Input Controls for Entering Uncertain Data:
+  Probability Distribution Sliders}.
+\newblock \bibinfo{journal}{\emph{Proc. ACM Hum.-Comput. Interact.}}
+  \bibinfo{volume}{1}, \bibinfo{number}{EICS}, Article \bibinfo{articleno}{3}
+  (\bibinfo{date}{jun} \bibinfo{year}{2017}), \bibinfo{numpages}{17}~pages.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3095805}
+\showDOI{\tempurl}
+
+
+\bibitem[Holtzman et~al\mbox{.}(2020)]%
+        {holtzman2020topp}
+\bibfield{author}{\bibinfo{person}{Ari Holtzman}, \bibinfo{person}{Jan Buys},
+  \bibinfo{person}{Li Du}, \bibinfo{person}{Maxwell Forbes}, {and}
+  \bibinfo{person}{Yejin Choi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{The Curious Case of Neural Text Degeneration}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1904.09751}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kahneman et~al\mbox{.}(2021)]%
+        {kahneman2021noise}
+\bibfield{author}{\bibinfo{person}{Daniel Kahneman}, \bibinfo{person}{Olivier
+  Sibony}, {and} \bibinfo{person}{Cass~R. Sunstein}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Noise}}.
+\newblock \bibinfo{publisher}{HarperCollins UK}, \bibinfo{address}{UK}.
+\newblock
+\showISBNx{978-0-00-830901-5}
+
+
+\bibitem[Kalloori et~al\mbox{.}(2018)]%
+        {kalloori2018eliciting}
+\bibfield{author}{\bibinfo{person}{Saikishore Kalloori},
+  \bibinfo{person}{Francesco Ricci}, {and} \bibinfo{person}{Rosella Gennari}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Eliciting pairwise preferences in recommender
+  systems}. In \bibinfo{booktitle}{\emph{Proceedings of the 12th ACM Conference
+  on Recommender Systems}}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{Vancouver British Columbia Canada},
+  \bibinfo{pages}{329–337}.
+\newblock
+\showISBNx{978-1-4503-5901-6}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3240323.3240364}
+\showDOI{\tempurl}
+
+
+\bibitem[Kim et~al\mbox{.}(2017)]%
+        {kim2017human}
+\bibfield{author}{\bibinfo{person}{Myunghee Kim}, \bibinfo{person}{Ye Ding},
+  \bibinfo{person}{Philippe Malcolm}, \bibinfo{person}{Jozefien Speeckaert},
+  \bibinfo{person}{Christoper~J. Siviy}, \bibinfo{person}{Conor~J. Walsh},
+  {and} \bibinfo{person}{Scott Kuindersma}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Human-in-the-loop Bayesian optimization of wearable
+  device parameters}.
+\newblock \bibinfo{journal}{\emph{PLOS ONE}} \bibinfo{volume}{12},
+  \bibinfo{number}{9} (\bibinfo{date}{09} \bibinfo{year}{2017}),
+  \bibinfo{pages}{1--15}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1371/journal.pone.0184054}
+\showDOI{\tempurl}
+
+
+\bibitem[Koyama et~al\mbox{.}(2014)]%
+        {koyama2014crowd}
+\bibfield{author}{\bibinfo{person}{Yuki Koyama}, \bibinfo{person}{Daisuke
+  Sakamoto}, {and} \bibinfo{person}{Takeo Igarashi}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Crowd-powered parameter analysis for visual design
+  exploration}. In \bibinfo{booktitle}{\emph{Proceedings of the 27th annual
+  {ACM} symposium on {User} interface software and technology}}
+  \emph{(\bibinfo{series}{{UIST} '14})}. \bibinfo{publisher}{ACM Press},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{65--74}.
+\newblock
+\showISBNx{978-1-4503-3069-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2642918.2647386}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Koyama et~al\mbox{.}(2016)]%
+        {koyama2016selph}
+\bibfield{author}{\bibinfo{person}{Yuki Koyama}, \bibinfo{person}{Daisuke
+  Sakamoto}, {and} \bibinfo{person}{Takeo Igarashi}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{SelPh: Progressive Learning and Support of Manual
+  Photo Color Enhancement}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2016 CHI Conference on Human Factors in Computing Systems}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{San Jose California USA},
+  \bibinfo{pages}{2520–2532}.
+\newblock
+\showISBNx{978-1-4503-3362-7}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2858036.2858111}
+\showDOI{\tempurl}
+
+
+\bibitem[Koyama et~al\mbox{.}(2020)]%
+        {koyama2020sequential}
+\bibfield{author}{\bibinfo{person}{Yuki Koyama}, \bibinfo{person}{Issei Sato},
+  {and} \bibinfo{person}{Masataka Goto}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Sequential gallery for interactive visual design
+  optimization}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Graphics}}
+  \bibinfo{volume}{39}, \bibinfo{number}{4} (\bibinfo{date}{Jul}
+  \bibinfo{year}{2020}), \bibinfo{pages}{88:88:1--88:88:12}.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3386569.3392444}
+\showDOI{\tempurl}
+
+
+\bibitem[Koyama et~al\mbox{.}(2017)]%
+        {koyama2017sequential}
+\bibfield{author}{\bibinfo{person}{Yuki Koyama}, \bibinfo{person}{Issei Sato},
+  \bibinfo{person}{Daisuke Sakamoto}, {and} \bibinfo{person}{Takeo Igarashi}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Sequential line search for efficient visual design
+  optimization by crowds}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Graphics}}
+  \bibinfo{volume}{36}, \bibinfo{number}{4} (\bibinfo{date}{Jul}
+  \bibinfo{year}{2017}), \bibinfo{pages}{48:1--48:11}.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3072959.3073598}
+\showDOI{\tempurl}
+
+
+\bibitem[Kushner(1964)]%
+        {kushner1964bo}
+\bibfield{author}{\bibinfo{person}{H.~J. Kushner}.}
+  \bibinfo{year}{1964}\natexlab{}.
+\newblock \showarticletitle{A New Method of Locating the Maximum Point of an
+  Arbitrary Multipeak Curve in the Presence of Noise}.
+\newblock \bibinfo{journal}{\emph{Journal of Basic Engineering}}
+  \bibinfo{volume}{86}, \bibinfo{number}{1} (\bibinfo{date}{Mar}
+  \bibinfo{year}{1964}), \bibinfo{pages}{97–106}.
+\newblock
+\showISSN{0021-9223}
+\urldef\tempurl%
+\url{https://doi.org/10.1115/1.3653121}
+\showDOI{\tempurl}
+
+
+\bibitem[Kuznetsova et~al\mbox{.}(2017)]%
+        {kuznetsova2017lmertest}
+\bibfield{author}{\bibinfo{person}{Alexandra Kuznetsova},
+  \bibinfo{person}{Per~B. Brockhoff}, {and} \bibinfo{person}{Rune H.~B.
+  Christensen}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{lmerTest} Package: Tests in Linear Mixed Effects
+  Models}.
+\newblock \bibinfo{journal}{\emph{Journal of Statistical Software}}
+  \bibinfo{volume}{82}, \bibinfo{number}{13} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{1--26}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18637/jss.v082.i13}
+\showDOI{\tempurl}
+
+
+\bibitem[Letham et~al\mbox{.}(2019)]%
+        {letham2019constrained}
+\bibfield{author}{\bibinfo{person}{Benjamin Letham}, \bibinfo{person}{Brian
+  Karrer}, \bibinfo{person}{Guilherme Ottoni}, {and} \bibinfo{person}{Eytan
+  Bakshy}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Constrained Bayesian Optimization with Noisy
+  Experiments}.
+\newblock \bibinfo{journal}{\emph{Bayesian Analysis}} \bibinfo{volume}{14},
+  \bibinfo{number}{2} (\bibinfo{date}{Jun} \bibinfo{year}{2019}),
+  \bibinfo{pages}{495–519}.
+\newblock
+\showISSN{1936-0975, 1931-6690}
+\urldef\tempurl%
+\url{https://doi.org/10.1214/18-BA1110}
+\showDOI{\tempurl}
+
+
+\bibitem[Lewis et~al\mbox{.}(2019)]%
+        {lewis2019bart}
+\bibfield{author}{\bibinfo{person}{Mike Lewis}, \bibinfo{person}{Yinhan Liu},
+  \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Marjan Ghazvininejad},
+  \bibinfo{person}{Abdelrahman Mohamed}, \bibinfo{person}{Omer Levy},
+  \bibinfo{person}{Veselin Stoyanov}, {and} \bibinfo{person}{Luke
+  Zettlemoyer}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{BART:} Denoising Sequence-to-Sequence Pre-training
+  for Natural Language Generation, Translation, and Comprehension}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1910.13461}
+  (\bibinfo{year}{2019}), \bibinfo{numpages}{1 - 10}~pages.
+\newblock
+\showeprint[arXiv]{1910.13461}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1910.13461}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lin(2004)]%
+        {lin2004rouge}
+\bibfield{author}{\bibinfo{person}{Chin-Yew Lin}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{ROUGE: A Package for Automatic Evaluation of
+  Summaries}. In \bibinfo{booktitle}{\emph{Text Summarization Branches Out}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Barcelona, Spain}, \bibinfo{pages}{74–81}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/W04-1013}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lin et~al\mbox{.}(2022)]%
+        {lin2022preference}
+\bibfield{author}{\bibinfo{person}{Jerry~Zhiyuan Lin}, \bibinfo{person}{Raul
+  Astudillo}, \bibinfo{person}{Peter Frazier}, {and} \bibinfo{person}{Eytan
+  Bakshy}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Preference Exploration for Efficient Bayesian
+  Optimization with Multiple Outcomes}. In
+  \bibinfo{booktitle}{\emph{Proceedings of The 25th International Conference on
+  Artificial Intelligence and Statistics}} \emph{(\bibinfo{series}{Proceedings
+  of Machine Learning Research}, Vol.~\bibinfo{volume}{151})},
+  \bibfield{editor}{\bibinfo{person}{Gustau Camps-Valls},
+  \bibinfo{person}{Francisco J.~R. Ruiz}, {and} \bibinfo{person}{Isabel
+  Valera}} (Eds.). \bibinfo{publisher}{PMLR}, \bibinfo{address}{Virtual
+  Conference}, \bibinfo{pages}{4235--4258}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v151/jerry-lin22a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lo and Andrews(2015)]%
+        {lo2015to}
+\bibfield{author}{\bibinfo{person}{Steson Lo} {and} \bibinfo{person}{Sally
+  Andrews}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{To transform or not to transform: Using generalized
+  linear mixed models to analyse reaction time data}.
+\newblock \bibinfo{journal}{\emph{Frontiers in psychology}}
+  \bibinfo{volume}{6} (\bibinfo{year}{2015}), \bibinfo{pages}{1171}.
+\newblock
+
+
+\bibitem[Luk(1994)]%
+        {luk1994multirank}
+\bibfield{author}{\bibinfo{person}{Wai-Lan Luk}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \emph{\bibinfo{title}{Multi-user interface for group ranking: a
+  user-centered approach}}.
+\newblock \bibinfo{thesistype}{Ph.\,D. Dissertation}.
+  \bibinfo{school}{University of British Columbia}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.14288/1.0087518}
+\showDOI{\tempurl}
+
+
+\bibitem[Marks et~al\mbox{.}(1997)]%
+        {marks1997design-galleries}
+\bibfield{author}{\bibinfo{person}{Joe Marks}, \bibinfo{person}{Brad Andalman},
+  \bibinfo{person}{Paul~A. Beardsley}, \bibinfo{person}{William Freeman},
+  \bibinfo{person}{Sarah Gibson}, \bibinfo{person}{Jessica Hodgins},
+  \bibinfo{person}{T. Kang}, \bibinfo{person}{Brian Mirtich},
+  \bibinfo{person}{Hanspeter Pfister}, \bibinfo{person}{Wheeler Ruml},
+  \bibinfo{person}{Kathy Ryall}, \bibinfo{person}{Joshua Seims}, {and}
+  \bibinfo{person}{Stuart Shieber}.} \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{{Design Galleries: A General Approach to Setting
+  Parameters for Computer Graphics and Animation}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 24th annual conference on
+  {Computer} graphics and interactive techniques}}
+  \emph{(\bibinfo{series}{{SIGGRAPH} '97})}. \bibinfo{publisher}{ACM
+  Press/Addison-Wesley Publishing Co.}, \bibinfo{address}{USA},
+  \bibinfo{pages}{389--400}.
+\newblock
+\showISBNx{978-0-89791-896-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/258734.258887}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Matejka et~al\mbox{.}(2016)]%
+        {matejka2016effect}
+\bibfield{author}{\bibinfo{person}{Justin Matejka}, \bibinfo{person}{Michael
+  Glueck}, \bibinfo{person}{Tovi Grossman}, {and} \bibinfo{person}{George
+  Fitzmaurice}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{The Effect of Visual Appearance on the Performance
+  of Continuous Sliders and Visual Analogue Scales}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2016 CHI Conference on Human
+  Factors in Computing Systems}} (San Jose, California, USA)
+  \emph{(\bibinfo{series}{CHI '16})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{5421–5432}.
+\newblock
+\showISBNx{9781450333627}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2858036.2858063}
+\showDOI{\tempurl}
+
+
+\bibitem[Mikkola et~al\mbox{.}(2020)]%
+        {mikkola2020projective}
+\bibfield{author}{\bibinfo{person}{Petrus Mikkola}, \bibinfo{person}{Milica
+  Todorovi{\'c}}, \bibinfo{person}{Jari J{\"a}rvi}, \bibinfo{person}{Patrick
+  Rinke}, {and} \bibinfo{person}{Samuel Kaski}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Projective Preferential Bayesian Optimization}. In
+  \bibinfo{booktitle}{\emph{International Conference on Machine Learning}}.
+  PMLR, \bibinfo{publisher}{MLResearchPress}, \bibinfo{address}{Online},
+  \bibinfo{pages}{6884--6892}.
+\newblock
+
+
+\bibitem[Mockus et~al\mbox{.}(1978)]%
+        {mockus1978application}
+\bibfield{author}{\bibinfo{person}{Jonas Mockus}, \bibinfo{person}{Vytautas
+  Tiesis}, {and} \bibinfo{person}{Antanas Zilinskas}.}
+  \bibinfo{year}{1978}\natexlab{}.
+\newblock \showarticletitle{The application of Bayesian methods for seeking the
+  extremum}.
+\newblock \bibinfo{journal}{\emph{Towards global optimization}}
+  \bibinfo{volume}{2}, \bibinfo{number}{117-129} (\bibinfo{year}{1978}),
+  \bibinfo{pages}{2}.
+\newblock
+
+
+\bibitem[Monarch(2021)]%
+        {monarch2021hitl}
+\bibfield{author}{\bibinfo{person}{Robert~M. Monarch}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Human-in-the-Loop Machine Learning: Active
+  Learning and Annotation for Human-centered AI}}.
+\newblock \bibinfo{publisher}{Simon and Schuster}, \bibinfo{address}{USA}.
+\newblock
+\showISBNx{978-1-61729-674-1}
+
+
+\bibitem[Močkus(1975)]%
+        {močkus1975on}
+\bibfield{author}{\bibinfo{person}{J. Močkus}.}
+  \bibinfo{year}{1975}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{On Bayesian Methods for Seeking the
+  Extremum}}.
+\newblock \bibinfo{publisher}{Springer}, \bibinfo{address}{Berlin, Heidelberg},
+  \bibinfo{pages}{400–404}.
+\newblock
+\showISBNx{978-3-662-38527-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-662-38527-2_55}
+\showDOI{\tempurl}
+
+
+\bibitem[Neubarth(2010)]%
+        {neubarth2010dnd}
+\bibfield{author}{\bibinfo{person}{Wolfgang Neubarth}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Drag \& drop: A flexible method for moving
+  objects, implementing rankings, and a wide range of other applications}}.
+\newblock \bibinfo{publisher}{American Psychological Association},
+  \bibinfo{address}{Washington, DC, US}, \bibinfo{pages}{63–74}.
+\newblock
+\showISBNx{978-1-4338-0695-7}
+\urldef\tempurl%
+\url{https://doi.org/10.1037/12076-005}
+\showDOI{\tempurl}
+
+
+\bibitem[Nguyen et~al\mbox{.}(2021)]%
+        {nguyen2021topk}
+\bibfield{author}{\bibinfo{person}{Quoc~Phong Nguyen},
+  \bibinfo{person}{Sebastian Tay}, \bibinfo{person}{Bryan Kian~Hsiang Low},
+  {and} \bibinfo{person}{Patrick Jaillet}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Top-k Ranking Bayesian Optimization}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the AAAI Conference on
+  Artificial Intelligence}} \bibinfo{volume}{35}, \bibinfo{number}{1010}
+  (\bibinfo{date}{May} \bibinfo{year}{2021}), \bibinfo{pages}{9135–9143}.
+\newblock
+\showISSN{2374-3468}
+
+
+\bibitem[Nguyen et~al\mbox{.}(2013)]%
+        {nguyen2013rating}
+\bibfield{author}{\bibinfo{person}{Tien~T. Nguyen}, \bibinfo{person}{Daniel
+  Kluver}, \bibinfo{person}{Ting-Yu Wang}, \bibinfo{person}{Pik-Mai Hui},
+  \bibinfo{person}{Michael~D. Ekstrand}, \bibinfo{person}{Martijn~C.
+  Willemsen}, {and} \bibinfo{person}{John Riedl}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Rating support interfaces to improve user
+  experience and recommender accuracy}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 7th ACM conference on
+  Recommender systems}} \emph{(\bibinfo{series}{RecSys ’13})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{149–156}.
+\newblock
+\showISBNx{978-1-4503-2409-0}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2507157.2507188}
+\showDOI{\tempurl}
+
+
+\bibitem[Nobarany et~al\mbox{.}(2012)]%
+        {nobarany2012opinion}
+\bibfield{author}{\bibinfo{person}{Syavash Nobarany}, \bibinfo{person}{Louise
+  Oram}, \bibinfo{person}{Vasanth~Kumar Rajendran}, \bibinfo{person}{Chi-Hsiang
+  Chen}, \bibinfo{person}{Joanna McGrenere}, {and} \bibinfo{person}{Tamara
+  Munzner}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{The design space of opinion measurement interfaces:
+  exploring recall support for rating and ranking}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the SIGCHI Conference on Human
+  Factors in Computing Systems}} \emph{(\bibinfo{series}{CHI ’12})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{2035–2044}.
+\newblock
+\showISBNx{978-1-4503-1015-4}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2207676.2208351}
+\showDOI{\tempurl}
+
+
+\bibitem[Ok et~al\mbox{.}(2012)]%
+        {ok2012incomplete}
+\bibfield{author}{\bibinfo{person}{Efe~A. Ok}, \bibinfo{person}{Pietro
+  Ortoleva}, {and} \bibinfo{person}{Gil Riella}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Incomplete Preferences Under Uncertainty:
+  Indecisiveness in Beliefs versus Tastes}.
+\newblock \bibinfo{journal}{\emph{Econometrica}} \bibinfo{volume}{80},
+  \bibinfo{number}{4} (\bibinfo{year}{2012}), \bibinfo{pages}{1791–1808}.
+\newblock
+\showISSN{1468-0262}
+\urldef\tempurl%
+\url{https://doi.org/10.3982/ECTA8040}
+\showDOI{\tempurl}
+
+
+\bibitem[Ou et~al\mbox{.}(2022)]%
+        {ou2022infloop}
+\bibfield{author}{\bibinfo{person}{Changkun Ou}, \bibinfo{person}{Daniel
+  Buschek}, \bibinfo{person}{Sven Mayer}, {and} \bibinfo{person}{Andreas
+  Butz}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{The Human in the Infinite Loop: A Case Study on
+  Revealing and Explaining Human-AI Interaction Loop Failures}. In
+  \bibinfo{booktitle}{\emph{Proceedings of Mensch Und Computer 2022}}
+  (2022-01-01) \emph{(\bibinfo{series}{MuC\'22})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{Darmstadt, Germany}, \bibinfo{numpages}{16}~pages.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3543758.3543761}
+\showDOI{\tempurl}
+
+
+\bibitem[Ou et~al\mbox{.}(2023)]%
+        {ou2023expertise}
+\bibfield{author}{\bibinfo{person}{Changkun Ou}, \bibinfo{person}{Sven Mayer},
+  {and} \bibinfo{person}{Andreas~Martin Butz}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{The Impact of Expertise in the Loop for Exploring
+  Machine Rationality}. In \bibinfo{booktitle}{\emph{Proceedings of the 28th
+  International Conference on Intelligent User Interfaces}} (Sydney, NSW,
+  Australia) \emph{(\bibinfo{series}{IUI '23})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{307–321}.
+\newblock
+\showISBNx{9798400701061}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3581641.3584040}
+\showDOI{\tempurl}
+
+
+\bibitem[Overgaard(2006)]%
+        {overgaard2006the}
+\bibfield{author}{\bibinfo{person}{Søren Overgaard}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{The Problem of Other Minds: Wittgenstein’s
+  Phenomenological Perspective}.
+\newblock \bibinfo{journal}{\emph{Phenomenology and the Cognitive Sciences}}
+  \bibinfo{volume}{5}, \bibinfo{number}{1} (\bibinfo{date}{Mar}
+  \bibinfo{year}{2006}), \bibinfo{pages}{53–73}.
+\newblock
+\showISSN{1572-8676}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11097-005-9014-7}
+\showDOI{\tempurl}
+
+
+\bibitem[Papineni et~al\mbox{.}(2002)]%
+        {papineni2002bleu}
+\bibfield{author}{\bibinfo{person}{Kishore Papineni}, \bibinfo{person}{Salim
+  Roukos}, \bibinfo{person}{Todd Ward}, {and} \bibinfo{person}{Wei-Jing Zhu}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Bleu: a Method for Automatic Evaluation of Machine
+  Translation}. In \bibinfo{booktitle}{\emph{Proceedings of the 40th Annual
+  Meeting of the Association for Computational Linguistics}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Philadelphia, Pennsylvania, USA},
+  \bibinfo{pages}{311–318}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3115/1073083.1073135}
+\showDOI{\tempurl}
+
+
+\bibitem[Payne et~al\mbox{.}(1993)]%
+        {payne1993the}
+\bibfield{author}{\bibinfo{person}{John~W Payne}, \bibinfo{person}{John~William
+  Payne}, \bibinfo{person}{James~R Bettman}, {and} \bibinfo{person}{Eric~J
+  Johnson}.} \bibinfo{year}{1993}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The adaptive decision maker}}.
+\newblock \bibinfo{publisher}{Cambridge university press},
+  \bibinfo{address}{Cambridge, UK}.
+\newblock
+
+
+\bibitem[Pfannschmidt et~al\mbox{.}(2022)]%
+        {pfannschmidt2022learning}
+\bibfield{author}{\bibinfo{person}{Karlson Pfannschmidt},
+  \bibinfo{person}{Pritha Gupta}, \bibinfo{person}{Björn Haddenhorst}, {and}
+  \bibinfo{person}{Eyke Hüllermeier}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Learning context-dependent choice functions}.
+\newblock \bibinfo{journal}{\emph{International Journal of Approximate
+  Reasoning}}  \bibinfo{volume}{140} (\bibinfo{date}{Jan}
+  \bibinfo{year}{2022}), \bibinfo{pages}{116–155}.
+\newblock
+\showISSN{0888-613X}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.ijar.2021.10.002}
+\showDOI{\tempurl}
+
+
+\bibitem[Razali et~al\mbox{.}(2011)]%
+        {razali2011power}
+\bibfield{author}{\bibinfo{person}{Nornadiah~Mohd Razali},
+  \bibinfo{person}{Yap~Bee Wah}, {et~al\mbox{.}}}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Power comparisons of shapiro-wilk,
+  kolmogorov-smirnov, lilliefors and anderson-darling tests}.
+\newblock \bibinfo{journal}{\emph{Journal of statistical modeling and
+  analytics}} \bibinfo{volume}{2}, \bibinfo{number}{1} (\bibinfo{year}{2011}),
+  \bibinfo{pages}{21--33}.
+\newblock
+
+
+\bibitem[Rezende et~al\mbox{.}(2014)]%
+        {rezende2014stochastic}
+\bibfield{author}{\bibinfo{person}{Danilo~Jimenez Rezende},
+  \bibinfo{person}{Shakir Mohamed}, {and} \bibinfo{person}{Daan Wierstra}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Stochastic Backpropagation and Approximate
+  Inference in Deep Generative Models}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 31st International Conference on
+  Machine Learning}}. \bibinfo{publisher}{PMLR}, \bibinfo{address}{Beijing,
+  China}, \bibinfo{pages}{1278–1286}.
+\newblock
+\showISSN{1938-7228}
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v32/rezende14.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Rombach et~al\mbox{.}(2022)]%
+        {rombach2022stablediffusion}
+\bibfield{author}{\bibinfo{person}{Robin Rombach}, \bibinfo{person}{Andreas
+  Blattmann}, \bibinfo{person}{Dominik Lorenz}, \bibinfo{person}{Patrick
+  Esser}, {and} \bibinfo{person}{Bj\"orn Ommer}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{High-Resolution Image Synthesis With Latent
+  Diffusion Models}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition (CVPR)}}.
+  \bibinfo{publisher}{IEEE}, \bibinfo{address}{New Orleans, USA},
+  \bibinfo{pages}{10684--10695}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2112.10752}
+\showDOI{\tempurl}
+
+
+\bibitem[Rouder et~al\mbox{.}(2009)]%
+        {rouder2009bayesian}
+\bibfield{author}{\bibinfo{person}{Jeffrey~N. Rouder}, \bibinfo{person}{Paul~L.
+  Speckman}, \bibinfo{person}{Dongchu Sun}, \bibinfo{person}{Richard~D. Morey},
+  {and} \bibinfo{person}{Geoffrey Iverson}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Bayesian t tests for accepting and rejecting the
+  null hypothesis}.
+\newblock \bibinfo{journal}{\emph{Psychonomic Bulletin \& Review}}
+  \bibinfo{volume}{16}, \bibinfo{number}{2} (\bibinfo{date}{Apr}
+  \bibinfo{year}{2009}), \bibinfo{pages}{225–237}.
+\newblock
+\showISSN{1531-5320}
+\urldef\tempurl%
+\url{https://doi.org/10.3758/PBR.16.2.225}
+\showDOI{\tempurl}
+
+
+\bibitem[Russell(2019)]%
+        {russell2019human}
+\bibfield{author}{\bibinfo{person}{Stuart Russell}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Human Compatible: AI and the Problem of
+  Control}}.
+\newblock \bibinfo{publisher}{Penguin UK}, \bibinfo{address}{UK}.
+\newblock
+\showISBNx{978-0-241-33524-6}
+
+
+\bibitem[Shahriari et~al\mbox{.}(2016)]%
+        {shahriari2016bo-review}
+\bibfield{author}{\bibinfo{person}{B. Shahriari}, \bibinfo{person}{K. Swersky},
+  \bibinfo{person}{Z. Wang}, \bibinfo{person}{R.~P. Adams}, {and}
+  \bibinfo{person}{N.~de Freitas}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Taking the {Human} {Out} of the {Loop}: {A}
+  {Review} of {Bayesian} {Optimization}}.
+\newblock \bibinfo{journal}{\emph{Proc. IEEE}} \bibinfo{volume}{104},
+  \bibinfo{number}{1} (\bibinfo{date}{Jan.} \bibinfo{year}{2016}),
+  \bibinfo{pages}{148--175}.
+\newblock
+\showISSN{1558-2256}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/JPROC.2015.2494218}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Sherer et~al\mbox{.}(1998)]%
+        {sherer1998the}
+\bibfield{author}{\bibinfo{person}{Mark Sherer}, \bibinfo{person}{Paula
+  Bergloff}, \bibinfo{person}{Corwin Boake}, \bibinfo{person}{Walter High~Jr},
+  {and} \bibinfo{person}{Ellen Levin}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{The Awareness Questionnaire: factor structure and
+  internal consistency}.
+\newblock \bibinfo{journal}{\emph{Brain Injury}} \bibinfo{volume}{12},
+  \bibinfo{number}{1} (\bibinfo{date}{Jan} \bibinfo{year}{1998}),
+  \bibinfo{pages}{63–68}.
+\newblock
+\showISSN{0269-9052}
+\urldef\tempurl%
+\url{https://doi.org/10.1080/026990598122863}
+\showDOI{\tempurl}
+
+
+\bibitem[Siivola et~al\mbox{.}(2021)]%
+        {siivola2021preferential}
+\bibfield{author}{\bibinfo{person}{Eero Siivola}, \bibinfo{person}{Akash~Kumar
+  Dhaka}, \bibinfo{person}{Michael~Riis Andersen}, \bibinfo{person}{Javier
+  González}, \bibinfo{person}{Pablo~García Moreno}, {and}
+  \bibinfo{person}{Aki Vehtari}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Preferential Batch Bayesian Optimization}. In
+  \bibinfo{booktitle}{\emph{2021 IEEE 31st International Workshop on Machine
+  Learning for Signal Processing (MLSP)}}. \bibinfo{publisher}{IEEE},
+  \bibinfo{address}{Gold Coast, Queensland, Australia}, \bibinfo{pages}{1–6}.
+\newblock
+\showISSN{1551-2541}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/MLSP52302.2021.9596494}
+\showDOI{\tempurl}
+
+
+\bibitem[Simpson et~al\mbox{.}(2020)]%
+        {simpson2020interactive}
+\bibfield{author}{\bibinfo{person}{Edwin Simpson}, \bibinfo{person}{Yang Gao},
+  {and} \bibinfo{person}{Iryna Gurevych}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Interactive Text Ranking with Bayesian
+  Optimization: A Case Study on Community QA and Summarization}.
+\newblock \bibinfo{journal}{\emph{Transactions of the Association for
+  Computational Linguistics}}  \bibinfo{volume}{8} (\bibinfo{date}{Dec}
+  \bibinfo{year}{2020}), \bibinfo{pages}{759–775}.
+\newblock
+\showISSN{2307-387X}
+\urldef\tempurl%
+\url{https://doi.org/10.1162/tacl_a_00344}
+\showDOI{\tempurl}
+
+
+\bibitem[Skinner(2011)]%
+        {skinner2011about}
+\bibfield{author}{\bibinfo{person}{B.~F. Skinner}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{About Behaviorism}}.
+\newblock \bibinfo{publisher}{Knopf Doubleday Publishing Group},
+  \bibinfo{address}{New York, NY, USA}.
+\newblock
+\showISBNx{978-0-307-79784-1}
+
+
+\bibitem[Thurstone(1927)]%
+        {thurstone1927comparelaw}
+\bibfield{author}{\bibinfo{person}{L.~L. Thurstone}.}
+  \bibinfo{year}{1927}\natexlab{}.
+\newblock \showarticletitle{A law of comparative judgment}.
+\newblock \bibinfo{journal}{\emph{Psychological Review}} \bibinfo{volume}{34},
+  \bibinfo{number}{4} (\bibinfo{year}{1927}), \bibinfo{pages}{273--286}.
+\newblock
+\showISSN{1939-1471(Electronic),0033-295X(Print)}
+\urldef\tempurl%
+\url{https://doi.org/10.1037/h0070288}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Tversky and Kahneman(1974)]%
+        {tversky1974judgment}
+\bibfield{author}{\bibinfo{person}{Amos Tversky} {and} \bibinfo{person}{Daniel
+  Kahneman}.} \bibinfo{year}{1974}\natexlab{}.
+\newblock \showarticletitle{Judgment under Uncertainty: Heuristics and Biases}.
+\newblock \bibinfo{journal}{\emph{Science}} \bibinfo{volume}{185},
+  \bibinfo{number}{4157} (\bibinfo{date}{Sep} \bibinfo{year}{1974}),
+  \bibinfo{pages}{1124–1131}.
+\newblock
+\showISSN{0036-8075, 1095-9203}
+\urldef\tempurl%
+\url{https://doi.org/10.1126/science.185.4157.1124}
+\showDOI{\tempurl}
+
+
+\bibitem[Wagenmakers(2007)]%
+        {wagenmakers2007bf}
+\bibfield{author}{\bibinfo{person}{Eric-Jan Wagenmakers}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{A practical solution to the pervasive problems ofp
+  values}.
+\newblock \bibinfo{journal}{\emph{Psychonomic Bulletin \& Review}}
+  \bibinfo{volume}{14}, \bibinfo{number}{5} (\bibinfo{date}{Oct}
+  \bibinfo{year}{2007}), \bibinfo{pages}{779–804}.
+\newblock
+\showISSN{1531-5320}
+\urldef\tempurl%
+\url{https://doi.org/10.3758/BF03194105}
+\showDOI{\tempurl}
+
+
+\bibitem[Welleck et~al\mbox{.}(2020)]%
+        {welleck2020neural}
+\bibfield{author}{\bibinfo{person}{Sean Welleck}, \bibinfo{person}{Ilia
+  Kulikov}, \bibinfo{person}{Stephen Roller}, \bibinfo{person}{Emily Dinan},
+  \bibinfo{person}{Kyunghyun Cho}, {and} \bibinfo{person}{Jason Weston}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Neural Text Generation With Unlikelihood Training}.
+  In \bibinfo{booktitle}{\emph{8th International Conference on Learning
+  Representations, {ICLR} 2020, Addis Ababa, Ethiopia, April 26-30, 2020}}.
+  \bibinfo{publisher}{OpenReview.net}, \bibinfo{address}{Virtual Conference},
+  \bibinfo{numpages}{18}~pages.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=SJeYe0NtvH}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wilber et~al\mbox{.}(2014)]%
+        {wilber2014cost}
+\bibfield{author}{\bibinfo{person}{Michael Wilber}, \bibinfo{person}{Iljung
+  Kwak}, {and} \bibinfo{person}{Serge Belongie}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Cost-Effective HITs for Relative Similarity
+  Comparisons}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the AAAI Conference on Human
+  Computation and Crowdsourcing}} \bibinfo{volume}{2}, \bibinfo{number}{1}
+  (\bibinfo{date}{Sep.} \bibinfo{year}{2014}), \bibinfo{pages}{227--233}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1609/hcomp.v2i1.13152}
+\showDOI{\tempurl}
+
+
+\bibitem[Wilson et~al\mbox{.}(2017)]%
+        {wilson2017reparam}
+\bibfield{author}{\bibinfo{person}{James~T. Wilson}, \bibinfo{person}{Riccardo
+  Moriconi}, \bibinfo{person}{Frank Hutter}, {and} \bibinfo{person}{Marc~Peter
+  Deisenroth}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{The reparameterization trick for acquisition
+  functions}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.1712.00424}
+\showDOI{\tempurl}
+
+
+\bibitem[Yue et~al\mbox{.}(2021)]%
+        {koyama2021ui}
+\bibfield{author}{\bibinfo{person}{Yonghao Yue}, \bibinfo{person}{Yuki Koyama},
+  \bibinfo{person}{Issei Sato}, {and} \bibinfo{person}{Takeo Igarashi}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{User interfaces for high-dimensional design
+  problems: from theories to implementations}. In \bibinfo{booktitle}{\emph{ACM
+  SIGGRAPH 2021 Courses}} \emph{(\bibinfo{series}{SIGGRAPH ’21})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1–34}.
+\newblock
+\showISBNx{978-1-4503-8361-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3450508.3464551}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2021)]%
+        {zhou2021interactive}
+\bibfield{author}{\bibinfo{person}{Yijun Zhou}, \bibinfo{person}{Yuki Koyama},
+  \bibinfo{person}{Masataka Goto}, {and} \bibinfo{person}{Takeo Igarashi}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Interactive Exploration-Exploitation Balancing for
+  Generative Melody Composition}. In \bibinfo{booktitle}{\emph{26th
+  International Conference on Intelligent User Interfaces}}
+  \emph{(\bibinfo{series}{IUI ’21})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{43–47}.
+\newblock
+\showISBNx{978-1-4503-8017-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3397481.3450663}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}

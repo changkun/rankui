@@ -1,0 +1,42 @@
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+
+\definecolor{ui1}{HTML}{c26f6d}
+\definecolor{ui2}{HTML}{d9a6a4}
+\definecolor{ui3}{HTML}{f2dfdd}
+\definecolor{ui4}{HTML}{e4e5eb}
+\definecolor{ui5}{HTML}{aab8d0}
+\definecolor{ui6}{HTML}{6e90bf}
+
+
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{xr}
+\makeatletter
+\newcommand{\setword}[2]{#1\def\@currentlabel{\unexpanded{#1}}\label{#2}}
+\makeatother
+
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{.}
+\usepackage{multirow}
+\usepackage{tabularx}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\makeatletter
+\newcolumntype{B}[3]{>{\boldmath\DC@{#1}{#2}{#3}}c<{\DC@end}}
+
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+% allow todos
+\usepackage{todonotes}
+\let\xtodo\todo
+\renewcommand{\todo}[1]{\xtodo[inline,color=green!50]{TODO: #1}}
+
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
