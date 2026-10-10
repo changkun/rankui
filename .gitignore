@@ -21,6 +21,10 @@ __pycache__/
 .venv/
 venv/
 
+# demo
+/demo/dist/
+/demo/.cache/
+
 # system
 node_modules/
 /system/frontend/*/build/
