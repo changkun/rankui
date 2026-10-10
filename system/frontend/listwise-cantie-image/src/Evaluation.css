@@ -1,0 +1,27 @@
+
+.Evaluation {
+    display: flex;
+    width: 80%;
+    flex-direction: inherit;
+    justify-content: space-between;
+}
+.EvaluationContent {
+    /* display: flex; */
+    /* flex-direction: inherit; */
+    /* justify-content: space-between; */
+    margin: 70px 10px 20px;
+}
+.Cards {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Card {
+    margin: 0 10px 20px;
+}
+.Submit-Controller {
+    margin: 70px 10px 0;
+    align-items: center;
+    justify-content: center;
+    text-transform: none !important;
+}

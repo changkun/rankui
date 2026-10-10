@@ -1,0 +1,51 @@
+.Main-Content {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+.Feedbacks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.Feedback-Controller {
+  width: 90%;
+  margin: 20px auto 10px;
+}
+.Pair-Controller {
+  width: 100%;
+  margin: 10px auto !important;
+}
+.Feedback-Disable {
+    margin: 0px auto 20px;
+    width: 50%;
+}
+.Content {
+  margin: 0px 10px 0;
+  display: flex;
+}
+.PairContent {
+  width: 70%;
+  margin: 70px 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.Checkbox {
+    display: flex;
+}
+.ExclusiveCheckbox1 {
+  margin: auto;
+}
+.ExclusiveCheckbox2 {
+  margin: auto;
+}
+.ExclusiveCheckboxGroup {
+  width: 100%;
+  margin: auto;
+}
+.Submit-Controller {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

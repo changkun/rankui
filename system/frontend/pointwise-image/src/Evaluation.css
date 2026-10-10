@@ -1,0 +1,37 @@
+.Main-Content {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+.Feedbacks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.Feedback-Controller {
+  width: 90%;
+  margin: 40px auto 10px;
+}
+.Feedback-Disable {
+    margin: 0px auto 20px;
+    width: 50%;
+}
+.Content {
+  width: 70%;
+  margin: 70px auto 30px;
+}
+
+.Feedback-Rater {
+  width: 80%;
+  margin: 0 auto 0;
+  text-align: left;
+}
+.Feedback-Disable {
+  width: 30%;
+}
+.Submit-Controller {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

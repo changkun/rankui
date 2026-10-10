@@ -1,0 +1,157 @@
+
+$base-grey-100: #fff;
+$base-grey-200: #f4f4f4;
+$base-grey-300: #dcdcdc;
+$base-grey-400: #cccccc;
+$base-grey-800: #7c7c7c;
+$base-grey-1000: #000;
+
+$base-red-200: #fff1f0;
+
+$primary-blue: #0983c5;
+$secondary-blue: #e2edf8;
+$droppable-item-container-width: 75px;
+$droppable-item-container-width-horizontal-gap: 6px;
+
+$button-group-height: 40px;
+$textfield-comment-height: 120px;
+.Usage {
+    text-align: left;
+    margin: 5px 0px 5px !important;
+    width: 320px;
+}
+.DragDropGroup {
+    height: calc(100% - #{$button-group-height} - #{$textfield-comment-height} - 200px);
+}
+.RankingBox {
+    margin-bottom: 10px;
+}
+.Comment {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.ButtonGroup {
+    width: 100%;
+    height: $button-group-height;
+
+    display: flex;
+    justify-content: space-between;
+
+    .SubmitButton {
+        margin: auto;
+    }
+}
+
+.Container {
+    width: calc(4 * #{$droppable-item-container-width} + 3 * #{$droppable-item-container-width-horizontal-gap});
+    color: black;
+
+    .ItemsContainer {
+        display: flex;
+
+        .ItemContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+
+            margin-top: 0px;
+
+            width: $droppable-item-container-width;
+            margin-right: $droppable-item-container-width-horizontal-gap;
+
+            &:last-child {
+            margin-right: 0px;
+            }
+        }
+    }
+
+    .DroppableRankingContainer {
+        position: relative;
+        border-radius: 12px;
+
+        .Text {
+            position: absolute;
+            top: 27px;
+            right: 9px;
+            font-style: italic;
+            color: gray;
+            user-select: none;
+            z-index: 0;
+            hr {
+                width: 20px;
+                margin: 2px auto;
+            }
+        }
+
+        .DroppableArea {
+            // align with .Text left
+            padding: 3px;
+            height: 100%;
+            border-radius: 12px;
+
+            display: flex;
+            // align-items: center;
+
+            &.DroppableArea_isDraggingOver {
+                background-color: $secondary-blue;
+                height: 91%; // HACK: why this is?
+            }
+
+            .DroppedItem {
+                margin-right: 5px;
+                z-index: 10;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+.DraggableBox {
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $base-grey-800;
+    padding-top: 10px;
+
+    hr {
+        width: 30px;
+        margin: 2px auto;
+    }
+    p {
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: darkblue;
+        font-size: large;
+    }
+
+    margin: auto;
+    border-radius: 12px;
+    width: 65px;
+    height: 55px;
+
+    background-color: $base-grey-200;
+}
+
+.ContainerOption {
+    height: 65px;
+    width: 55px;
+    background-color: $base-grey-200;
+}
+
+.ContainerBox {
+    height: 75px;
+    background-color: $base-grey-200;
+    margin-top: 10px;
+    border: 2px dashed $base-grey-800;
+}
+.ContainerBoxWarning {
+    height: 75px;
+    background-color: $base-red-200;
+    margin-top: 10px;
+    border: 2px dashed $base-grey-800;
+}

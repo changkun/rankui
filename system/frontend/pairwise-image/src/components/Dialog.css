@@ -1,0 +1,10 @@
+.Questionnaire {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+.QuestionnaireQuestion {
+    color: black;
+    margin-top: 20px !important;
+}

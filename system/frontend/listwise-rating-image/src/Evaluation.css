@@ -1,0 +1,46 @@
+
+.Evaluation {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 100%;
+    margin: 70px 10px 20px;
+}
+.EvaluationContent {
+    width: 60%;
+    margin: 0px 10px 20px;
+}
+.Submit-Controller {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-transform: none !important;
+}
+.Comment {
+    /* width: 60%; */
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.ButtonGroup {
+    /* width: 50%; */
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Cards {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+}
+.Card {
+    margin: 0 10px 20px;
+}
+.SubmitButton {
+    margin: auto;
+}
+.Feedback-Rater {
+    margin: 10px 10px 10px 10px;
+}
