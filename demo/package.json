@@ -1,0 +1,25 @@
+{
+  "name": "rankui-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive demo of the six opinion measurement interfaces, running entirely in the browser.",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "build": "node build.ts",
+    "dev": "node build.ts --serve",
+    "test": "node --test 'test/*.test.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "playwright-core": "^1.63.0",
+    "typescript": "^7.0.2"
+  },
+  "license": "GPL-3.0-only"
+}
