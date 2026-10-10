@@ -1,12 +1,16 @@
 // The six opinion measurement interfaces. Each widget lays out the options
 // of one iteration with its input controls and reports the answer in the
-// form the optimizer consumes. Wording follows the study's interfaces
-// (system/frontend).
+// form the optimizer consumes. Layout and wording follow the study's
+// interfaces (system/frontend): the enhanced photos sit in the center, and
+// the listwise interfaces put their input next to them.
 
 import type { Feedback, InterfaceId } from "./optimizer.ts";
 
 export type Widget = {
-  element: HTMLElement;
+  /** The enhanced photos, with any input that belongs directly to a photo. */
+  stage: HTMLElement;
+  /** Input shown in a column beside the photos, for the listwise interfaces. */
+  panel: HTMLElement | null;
   /** The answer, or a message that says what is still missing. */
   read(): Feedback | string;
 };
@@ -58,45 +62,21 @@ function ratingScale(): { element: HTMLElement; read(): number | null | undefine
   };
 }
 
-const statement = "I think AI did an excellent color enhancement.";
-
 function pointwise(canvases: HTMLCanvasElement[]): Widget {
   const scale = ratingScale();
   return {
-    element: h(
+    stage: h(
       "div",
-      { class: "widget widget-pointwise" },
-      h("div", { class: "options options-1" }, photoCard(canvases[0], null)),
-      h("p", { class: "statement" }, statement),
+      { class: "stage stage-single" },
+      photoCard(canvases[0], null),
+      h("p", { class: "statement" }, "I think AI did an excellent color enhancement."),
       scale.element,
     ),
+    panel: null,
     read() {
       const rating = scale.read();
       if (rating === undefined) return "Please use the slider to indicate your evaluation at least once.";
       return { kind: "ratings", ratings: [rating] };
-    },
-  };
-}
-
-function listwiseRating(canvases: HTMLCanvasElement[]): Widget {
-  const scales = canvases.map(() => ratingScale());
-  return {
-    element: h(
-      "div",
-      { class: "widget widget-listwise-rating" },
-      h("p", { class: "statement" }, statement),
-      h(
-        "div",
-        { class: "options options-4" },
-        ...canvases.map((canvas, i) => photoCard(canvas, `AI Enhanced Photo ${letters[i]}`, scales[i].element)),
-      ),
-    ),
-    read() {
-      const ratings = scales.map((s) => s.read());
-      if (ratings.some((r) => r === undefined)) {
-        return "Please use every slider at least once, or check “I don't know” for it.";
-      }
-      return { kind: "ratings", ratings: ratings as (number | null)[] };
     },
   };
 }
@@ -106,29 +86,57 @@ function pairwise(canvases: HTMLCanvasElement[]): Widget {
   const radio = (value: string, label: string) =>
     h("label", { class: "check" }, h("input", { type: "radio", name, value }), label);
   const unknown = h("input", { type: "checkbox" });
-  const group = h(
+  const stage = h(
     "div",
-    { class: "choice" },
-    h("div", { class: "choice-row" }, radio("0", "This image (A) is better"), radio("1", "This image (B) is better")),
-    h("div", { class: "choice-row center" }, radio("same", "They have the same enhanced quality")),
-    h("div", { class: "choice-row center" }, h("label", { class: "check" }, unknown, "I don't know which is better")),
+    { class: "stage stage-pair" },
+    h(
+      "div",
+      { class: "pair" },
+      ...canvases.map((canvas, i) =>
+        h("div", { class: "pair-item" }, photoCard(canvas, null), radio(String(i), `This image (${letters[i]}) is better`)),
+      ),
+    ),
+    h(
+      "div",
+      { class: "choice" },
+      radio("same", "They have the same enhanced quality"),
+      h("label", { class: "check" }, unknown, "I don't know which is better"),
+    ),
   );
   return {
-    element: h(
-      "div",
-      { class: "widget widget-pairwise" },
-      h(
-        "div",
-        { class: "options options-2" },
-        ...canvases.map((canvas, i) => photoCard(canvas, `AI Enhanced Photo ${letters[i]}`)),
-      ),
-      group,
-    ),
+    stage,
+    panel: null,
     read() {
       if (unknown.checked) return { kind: "choice", choice: null };
-      const picked = group.querySelector<HTMLInputElement>(`input[name="${name}"]:checked`);
+      const picked = stage.querySelector<HTMLInputElement>(`input[name="${name}"]:checked`);
       if (!picked) return "Please indicate your feedback.";
       return { kind: "choice", choice: picked.value === "same" ? "same" : picked.value === "0" ? 0 : 1 };
+    },
+  };
+}
+
+function listwiseRating(canvases: HTMLCanvasElement[]): Widget {
+  const scales = canvases.map(() => ratingScale());
+  return {
+    stage: h(
+      "div",
+      { class: "stage stage-grid" },
+      ...canvases.map((canvas, i) =>
+        photoCard(
+          canvas,
+          null,
+          h("p", { class: "statement" }, `I think AI did an excellent photo enhancement in this image (${letters[i]}).`),
+          scales[i].element,
+        ),
+      ),
+    ),
+    panel: h("div", { class: "panel-input" }),
+    read() {
+      const ratings = scales.map((s) => s.read());
+      if (ratings.some((r) => r === undefined)) {
+        return "Please use every slider at least once, or check “I don't know” for it.";
+      }
+      return { kind: "ratings", ratings: ratings as (number | null)[] };
     },
   };
 }
@@ -231,20 +239,20 @@ function ranking(canvases: HTMLCanvasElement[], rows: Row[], exclusive: boolean)
   render();
 
   return {
-    element: h(
+    stage: h(
       "div",
-      { class: "widget widget-ranking" },
-      h(
-        "div",
-        { class: "options options-4" },
-        ...canvases.map((canvas, i) => photoCard(canvas, `AI Enhanced Photo ${letters[i]}`)),
-      ),
+      { class: "stage stage-grid" },
+      ...canvases.map((canvas, i) => photoCard(canvas, `AI Enhanced Photo ${letters[i]}`)),
+    ),
+    panel: h(
+      "div",
+      { class: "panel-input" },
       h(
         "p",
-        { class: "statement" },
+        { class: "usage" },
         "Drag and drop the following boxes to ",
         h("strong", {}, "rank"),
-        " AI enhanced results. You can also click a box, then click a row.",
+        " AI enhanced results. You can also click a box, then a row.",
       ),
       board,
     ),

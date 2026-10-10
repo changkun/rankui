@@ -6,8 +6,10 @@
   --muted: #5d6673;
   --accent: #1976d2;
   --accent-dark: #125ea8;
-  --accent-soft: #e6f0fb;
-  --warn-soft: #fbe9e7;
+  --accent-soft: #e2edf8;
+  --slot: #f4f4f4;
+  --slot-line: #7c7c7c;
+  --warn-soft: #fff1f0;
   --radius: 6px;
 }
 
@@ -37,7 +39,7 @@ a { color: var(--accent-dark); }
 .authors { color: var(--muted); font-size: 13px; }
 .top-links { display: flex; gap: 8px; flex-shrink: 0; }
 
-main { max-width: 1280px; margin: 0 auto; padding: 16px 24px 40px; }
+main { max-width: 1360px; margin: 0 auto; padding: 16px 24px 40px; }
 .lead { max-width: 900px; margin-bottom: 14px; }
 
 button, .button {
@@ -54,9 +56,17 @@ button, .button {
 }
 button:hover, .button:hover { border-color: var(--accent); }
 button:focus-visible, .button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-button.primary { background: var(--accent); border-color: var(--accent); color: #fff; text-transform: uppercase; letter-spacing: 0.02em; padding: 8px 16px; }
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 8px 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
 button.primary:hover { background: var(--accent-dark); }
-button.primary:disabled { background: #c9ced6; border-color: #c9ced6; cursor: not-allowed; }
+button.primary:disabled { background: #c9ced6; border-color: #c9ced6; box-shadow: none; cursor: not-allowed; }
 button.secondary { color: var(--accent-dark); }
 
 .toolbar {
@@ -80,11 +90,13 @@ button.secondary { color: var(--accent-dark); }
 .thumb[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 #restart { margin-left: auto; }
 
+/* Original photo and notes on the left, the interface on the right. */
 .layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 14px; align-items: start; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; }
 .panel h2 { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
 .side { display: grid; gap: 14px; }
 .side canvas { display: block; width: 100%; height: auto; border-radius: 4px; }
+.task-text { font-size: 12px; line-height: 1.45; margin-top: 8px; }
 .about-name { font-weight: 600; margin-bottom: 4px; }
 #about-ui p { font-size: 14px; }
 
@@ -105,61 +117,94 @@ button.secondary { color: var(--accent-dark); }
   color: var(--accent-dark);
 }
 .progress { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-bottom: 12px; }
-.message { color: #b3261e; min-height: 22px; margin-top: 8px; font-size: 14px; }
+
+/* Photos in the center; the listwise interfaces add a column for their input. */
+.work-side { display: grid; grid-template-columns: minmax(0, 1fr) 324px; gap: 16px; align-items: start; }
+.side-input { display: grid; gap: 10px; }
+.controls { margin-top: 10px; }
+.message { color: #b3261e; min-height: 22px; font-size: 14px; text-align: center; }
 .actions { display: flex; gap: 10px; justify-content: center; margin-top: 4px; }
+.side-input .controls { margin-top: 0; }
+.side-input .actions { justify-content: space-between; }
+.side-input .actions button { flex: 1; padding: 8px 6px; font-size: 13px; }
 
-.options { display: grid; gap: 12px; }
-.options-1 { grid-template-columns: minmax(0, 560px); justify-content: center; }
-.options-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.options-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.option canvas { display: block; width: 100%; height: auto; border-radius: 4px; }
-.option figcaption { font-size: 13px; font-weight: 600; margin-top: 4px; }
-.result { max-width: 860px; margin-bottom: 12px; }
+.option {
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22), 0 1px 1px rgba(0, 0, 0, 0.12);
+}
+.option canvas { display: block; width: 100%; height: auto; }
+.option figcaption { font-size: 13px; font-weight: 600; padding: 8px 10px; }
 
-.statement { margin: 12px 0 6px; }
-.widget-pointwise .statement, .widget-pointwise .rating { max-width: 560px; margin-left: auto; margin-right: auto; }
+.stage-single { max-width: 600px; margin: 0 auto; }
+.stage-single .statement { text-align: center; margin: 14px 0 6px; }
+.stage-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.stage-grid .statement { font-size: 12.5px; text-align: center; padding: 8px 10px 0; }
+.stage-grid .rating { flex-direction: column; align-items: stretch; gap: 2px; padding: 4px 16px 10px; }
+.stage-grid .rating .check { justify-content: center; }
+
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.pair-item { display: grid; gap: 10px; justify-items: center; }
+.pair-item .option { width: 100%; }
+.choice { display: grid; gap: 8px; justify-items: center; margin-top: 10px; }
+.result { max-width: 900px; margin-bottom: 12px; }
+
 .rating { display: flex; align-items: center; gap: 12px; margin-top: 6px; }
 .rating-scale { flex: 1; min-width: 0; }
 .scale { width: 100%; accent-color: var(--accent); margin: 0; }
 .scale-ends { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
 .check { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; white-space: nowrap; cursor: pointer; }
 .check input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
-.options-4 .rating { flex-direction: column; align-items: stretch; gap: 4px; }
 
-.choice { max-width: 620px; margin: 12px auto 0; display: grid; gap: 8px; }
-.choice-row { display: flex; justify-content: space-between; gap: 12px; }
-.choice-row.center { justify-content: center; }
-
-.board { max-width: 560px; margin: 0 auto; display: grid; gap: 6px; }
+/* The ranking board of UI4 to UI6. */
+.usage { font-size: 13px; line-height: 1.4; }
+.board { display: grid; gap: 8px; margin-top: 8px; }
 .tray { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
-.slot { min-height: 46px; border: 1px dashed #9aa3af; border-radius: 4px; background: #f0f2f5; display: grid; place-items: center; }
+.slot { height: 62px; border: 2px dashed var(--slot-line); border-radius: 10px; background: var(--slot); display: grid; place-items: center; }
 .rank-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  min-height: 46px;
-  padding: 3px 12px 3px 5px;
-  border: 1px dashed #9aa3af;
-  border-radius: 4px;
-  background: #f0f2f5;
+  gap: 8px;
+  height: 66px;
+  padding: 3px 10px 3px 4px;
+  border: 2px dashed var(--slot-line);
+  border-radius: 10px;
+  background: var(--slot);
 }
 .rank-row.unknown { background: var(--warn-soft); }
-.rank-row.over, .tray.over .slot:empty, .rank-row.armed:hover { background: var(--accent-soft); border-color: var(--accent); }
-.rank-row.armed { cursor: pointer; }
-.rank-boxes { display: flex; gap: 6px; min-height: 38px; }
-.rank-label { font-style: italic; color: var(--muted); font-size: 14px; }
+.rank-row.over, .rank-row.armed:hover { background: var(--accent-soft); }
+.tray.over .slot:empty { background: var(--accent-soft); }
+.rank-row.armed, .tray:has(~ .armed) { cursor: pointer; }
+.rank-boxes { display: flex; gap: 5px; }
+.rank-label { font-style: italic; color: gray; font-size: 15px; white-space: nowrap; }
 .chip-box {
-  width: 44px;
-  height: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 52px;
+  height: 52px;
   padding: 0;
+  font-size: 16px;
   font-weight: 700;
-  color: #0d3c78;
-  background: #e9eef5;
-  border: 1px solid #7b8794;
+  line-height: 1;
+  color: darkblue;
+  background: var(--slot);
+  border: 2px solid var(--slot-line);
+  border-radius: 10px;
   cursor: grab;
 }
-.chip-box[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+/* The three lines that mark the box as draggable. */
+.chip-box::before {
+  content: "";
+  width: 26px;
+  height: 11px;
+  background: repeating-linear-gradient(#a0a0a0 0 1.5px, transparent 1.5px 4.75px);
+}
+.chip-box[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
 
 .runs { margin-top: 14px; }
 #runs-table { overflow-x: auto; }
@@ -171,16 +216,21 @@ th { font-size: 12px; color: var(--muted); font-weight: 600; }
 .notes { margin-top: 20px; max-width: 900px; display: grid; gap: 8px; font-size: 14px; }
 .notes h2 { font-size: 15px; }
 
+@media (max-width: 1120px) {
+  .work-side { grid-template-columns: minmax(0, 1fr); }
+  .side-input { max-width: 360px; margin: 0 auto; width: 100%; }
+}
 @media (max-width: 980px) {
   .layout { grid-template-columns: minmax(0, 1fr); }
   .side { grid-template-columns: repeat(2, minmax(0, 1fr)); order: 2; }
   .side #about-ui { grid-column: 1 / -1; }
-  .options-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .top { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 560px) {
   main { padding: 12px; }
   .top { padding: 12px; }
-  .choice-row { flex-direction: column; }
   #restart { margin-left: 0; }
+  .stage-grid, .pair { gap: 8px; }
+  .stage-grid .rating { padding: 4px 8px 8px; }
+  .scale-ends { font-size: 10px; }
 }

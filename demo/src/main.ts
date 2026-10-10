@@ -61,6 +61,16 @@ const interfaces: InterfaceInfo[] = [
   },
 ];
 
+// How the study's task description names the input of each interface.
+const taskTool: Record<InterfaceId, string> = {
+  pointwise: "using the rating tool on the right",
+  pairwise: "by selecting the better photo on the right",
+  "listwise-rating": "using the rating tools on the right",
+  "listwise-notie": "using the ranking tool on the right",
+  "listwise-cantie": "using the ranking tool on the right",
+  "listwise-ranking": "using the ranking tool on the right",
+};
+
 const photoCount = 3;
 const width = 600;
 const height = 400;
@@ -178,7 +188,11 @@ function renderToolbar() {
 
 function renderSidebar() {
   const current = belief(run.ui.id, run.history);
-  $("original").replaceChildren(render(run.photo));
+  $("original").replaceChildren(
+    render(run.photo),
+    h("p", { class: "task-text" }, `Please provide feedback about AI-enhanced photos ${taskTool[run.ui.id]} to tell how good the enhanced photo color is, compared to the original.`),
+    h("p", { class: "task-text" }, "The AI running in the background will improve the enhanced photos iteratively according to your feedback. You can click the “I'm satisfied” button to terminate if you think one of the photos fits your preference."),
+  );
   $("best").replaceChildren(
     current
       ? h("div", {}, render(run.photo, current.best), parameterBars(current.best))
@@ -224,13 +238,16 @@ function present() {
   submit.addEventListener("click", () => act(false));
   satisfied.addEventListener("click", () => act(true));
   for (const type of ["input", "click", "drop"]) {
-    widget.element.addEventListener(type, () => (message.textContent = ""));
+    for (const el of [widget.stage, widget.panel]) {
+      el?.addEventListener(type, () => (message.textContent = ""));
+    }
   }
 
   const phase =
     run.history.length < 4
       ? "The first rounds show a spread of options so that the optimizer can get its bearings."
       : "The optimizer now proposes options based on your feedback so far.";
+  const controls = h("div", { class: "controls" }, message, h("div", { class: "actions" }, submit, satisfied));
   $("workspace").replaceChildren(
     h(
       "div",
@@ -238,9 +255,11 @@ function present() {
       h("strong", {}, `Iteration ${iteration} of ${maxIterations}`),
       h("span", { class: "muted" }, phase),
     ),
-    widget.element,
-    message,
-    h("div", { class: "actions" }, submit, satisfied),
+    // The listwise interfaces put their input beside the photos, the
+    // others below them, as in the study.
+    widget.panel
+      ? h("div", { class: "work work-side" }, widget.stage, h("div", { class: "side-input" }, widget.panel, controls))
+      : h("div", { class: "work" }, widget.stage, controls),
   );
   run.presentedAt = performance.now();
 }
@@ -277,7 +296,7 @@ function finish() {
     result
       ? h(
           "div",
-          { class: "options options-2 result" },
+          { class: "pair result" },
           h("figure", { class: "option" }, render(run.photo), h("figcaption", {}, "Original")),
           h("figure", { class: "option" }, render(run.photo, result), h("figcaption", {}, "What the optimizer believes you like best")),
         )
