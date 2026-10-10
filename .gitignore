@@ -1,0 +1,31 @@
+# raw data, distributed as release archives (see analysis/README.md)
+/analysis/text/
+/analysis/image/
+/dist/
+
+# paper build
+/paper/main.pdf
+*.aux
+*.out
+*.log
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+comment.cut
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints
+.venv/
+venv/
+
+# system
+node_modules/
+/system/frontend/*/build/
+/system/backend/human-preference-prior
+/system/backend/data/*/*
+!/system/backend/data/*/tasks
+
+.DS_Store
