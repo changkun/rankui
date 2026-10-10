@@ -1,0 +1,1 @@
+ab -p data.json -T application/json -c 1 -n 100 http://localhost:4563/summarize
