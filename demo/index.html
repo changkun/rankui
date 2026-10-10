@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rethinking Opinion Measurement Interfaces: Interactive Demo</title>
+<meta name="description" content="Try the six opinion measurement interfaces from the paper: give feedback on enhanced photos and watch a Bayesian optimizer adapt to it, in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%231976d2'/%3E%3Cpath d='M4 5h8M4 8h6M4 11h4' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-title">
+    <h1>Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization</h1>
+    <p class="authors">Changkun Ou, Sven Mayer, Daniel Buschek, Andreas Butz · interactive demo</p>
+  </div>
+  <nav class="top-links">
+    <a class="button" href="https://changkun.de/paper/ou2026rethinking.pdf">Paper</a>
+    <a class="button" href="https://github.com/changkun/rankui">Code and data</a>
+  </nav>
+</header>
+
+<main>
+  <p class="lead">
+    An optimizer adjusts the colors of a photo and asks what you think. How it asks is the subject of the paper:
+    the same person tells the optimizer different things through a rating scale, a choice between two, or a ranking.
+    Pick an interface, give feedback for a few rounds, and compare.
+  </p>
+
+  <section class="toolbar" aria-label="Setup">
+    <div class="toolbar-group">
+      <span class="toolbar-label">Interface</span>
+      <div id="interfaces" class="tabs"></div>
+    </div>
+    <div class="toolbar-group">
+      <span class="toolbar-label">Photo</span>
+      <div id="photos" class="thumbs"></div>
+    </div>
+    <button id="restart" type="button" class="secondary">Restart</button>
+  </section>
+
+  <div class="layout">
+    <aside class="side">
+      <section class="panel">
+        <h2>Original photo</h2>
+        <div id="original"></div>
+      </section>
+      <section class="panel">
+        <h2>Optimizer's best guess so far</h2>
+        <div id="best"></div>
+      </section>
+      <section class="panel" id="about-ui"></section>
+    </aside>
+    <section id="workspace" class="panel workspace" aria-live="polite"></section>
+  </div>
+
+  <section id="runs" class="panel runs" hidden>
+    <h2>Your runs</h2>
+    <div id="runs-table"></div>
+  </section>
+
+  <section class="notes">
+    <h2>About this demo</h2>
+    <p>
+      The six interfaces and the photo color enhancement task are the ones used in the study (N=360) reported in the paper.
+      The demo runs entirely in your browser: nothing you do here is recorded or sent anywhere.
+    </p>
+    <p>
+      To run without a server, the optimizer is a compact reimplementation of the study's Bayesian optimizers rather
+      than the original BoTorch code. It converts your feedback the same way: ratings train a utility model, choices and
+      rankings become pairwise comparisons, “I don't know” answers are left out, and a tie in a ranking counts in both
+      directions. The study's source code, data, and analysis are in the
+      <a href="https://github.com/changkun/rankui">repository</a>.
+    </p>
+    <p class="muted">
+      Photos by Yuki Koyama, released under CC0 with
+      <a href="https://github.com/yuki-koyama/sequential-gallery">Sequential Gallery</a>.
+    </p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
