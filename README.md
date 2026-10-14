@@ -4,7 +4,7 @@
 
 **Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization** <br/>
 **[Changkun Ou](https://changkun.de)**, **[Sven Mayer](https://sven-mayer.com)**, **[Daniel Buschek](https://daniel-buschek.de)**, and **[Andreas Butz](http://butz.org)** <br/>
-arXiv preprint, 2026. [arXiv:2610.14757](https://arxiv.org/abs/2610.14757) <br/>
+arXiv preprint, 2026. [arXiv:2610.14757](https://arxiv.org/abs/2610.14757). [doi:10.48550/arXiv.2610.14757](https://doi.org/10.48550/arXiv.2610.14757) <br/>
 
 **Try the six interfaces in your browser: [changkun.de/research/rankui](https://changkun.de/research/rankui/)**
 
@@ -130,6 +130,7 @@ If you find our research helpful, we would appreciate a citation via:
 	eprint        = {2610.14757},
 	archiveprefix = {arXiv},
 	primaryclass  = {cs.HC},
+	doi           = {10.48550/arXiv.2610.14757},
 	url           = {https://arxiv.org/abs/2610.14757}
 }
 ```
