@@ -4,6 +4,7 @@
 
 **Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization** <br/>
 **[Changkun Ou](https://changkun.de)**, **[Sven Mayer](https://sven-mayer.com)**, **[Daniel Buschek](https://daniel-buschek.de)**, and **[Andreas Butz](http://butz.org)** <br/>
+arXiv preprint, 2026. [arXiv:2610.14757](https://arxiv.org/abs/2610.14757) <br/>
 
 **Try the six interfaces in your browser: [changkun.de/research/rankui](https://changkun.de/research/rankui/)**
 
@@ -13,7 +14,7 @@ used in the studies, and an interactive demo.
 
 ## Full Paper
 
-The paper is available at [ou2026rethinking.pdf](./ou2026rethinking.pdf).
+The paper is available on [arXiv](https://arxiv.org/abs/2610.14757) and in this repository as [ou2026rethinking.pdf](./ou2026rethinking.pdf).
 Its LaTeX source is in the [paper](./paper) folder.
 
 Human-in-the-loop optimization presents choices to a human decision-maker and
@@ -123,9 +124,12 @@ If you find our research helpful, we would appreciate a citation via:
 
 ```bibtex
 @misc{ou2026rethinking,
-	title        = {Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization},
-	author       = {Ou, Changkun and Mayer, Sven and Buschek, Daniel and Butz, Andreas},
-	year         = 2026,
-	howpublished = {\url{https://github.com/changkun/rankui}}
+	title         = {Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization},
+	author        = {Ou, Changkun and Mayer, Sven and Buschek, Daniel and Butz, Andreas},
+	year          = 2026,
+	eprint        = {2610.14757},
+	archiveprefix = {arXiv},
+	primaryclass  = {cs.HC},
+	url           = {https://arxiv.org/abs/2610.14757}
 }
 ```
